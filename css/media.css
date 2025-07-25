@@ -109,6 +109,16 @@
         margin-top: 20px;
         font-size: 16px;
     }
+    /* subscription section media */
+    .subscription-container {
+        width: 90%;
+    }
+    .subscription-form input {
+        width: 70%;
+    }
+    .subscription-btn {
+        width: 30%;
+    }
     
 
 }

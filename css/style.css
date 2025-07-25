@@ -172,3 +172,26 @@ body {
   z-index: 1;
   border-radius: 22px;
 }
+
+/* subscription section style */
+.subscription {
+  padding: 200px 0;
+  background-image: url(../images/news-letter-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.subscription-container {
+  width: 60%;
+}
+.subscription-btn {
+  padding: 19px 0;
+  background-color: #E95A08;
+  color: white;
+  font-size: 16;
+  font-weight: 500;
+}
+input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
