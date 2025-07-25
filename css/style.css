@@ -2,7 +2,7 @@
 body {
   background-color: #F5F8FF;
 }
-.header-container, .hero, .plants, .plant-lover {
+.header-container, .hero, .plants, .plant-lover, .latest {
   width: calc(100% - 20.833%);
 }
 .body-text, .section-heading, .btn-primary {
@@ -11,6 +11,7 @@ body {
 .section-heading {
   font-size: 50px;
   line-height: 65px;
+  text-transform: capitalize;
 }
 .body-text {
   font-size: 22px;
@@ -115,4 +116,59 @@ body {
 }
 .lover-text-container ul li {
   margin-top: 20px;
+}
+/* latest deals styles */
+.latest-text {
+  margin-top: 16px;
+}
+.latest-card-container {
+  margin: 95px 0 120px;
+}
+
+.left-card, .right-card {
+  margin-top: 25px;
+}
+.left-card, .left-card img {
+  border-radius: 14px;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.40);
+  inset: 0;
+  z-index: 1;
+  border-radius: 14px;
+}
+.latest-card-text h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.latest-card-text a {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.right-card, .right-card img {
+  border-radius: 22px;
+}
+.right-latest-card-text, .latest-card-text {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+.right-latest-card-text h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.right-latest-card-text a {
+  margin-top: 15px;
+  font-size: 28px;
+  font-weight: 500;
+}
+.right-overlay {
+  background-color: rgba(0, 0, 0, 0.40);
+  inset: 0;
+  z-index: 1;
+  border-radius: 22px;
 }

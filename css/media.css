@@ -2,12 +2,12 @@
 @media (width <= 48rem) 
 {
     /* common shared media */
-    .header-container, .hero-text-container, .plants, .plant-lover {
+    .header-container, .hero-text-container, .plants, .plant-lover, .latest {
         width: calc(100% - 8.14%);
     }
     .section-heading {
         font-size: 24px;
-        line-height: auto;
+        line-height: normal;
     }
     .body-text {
         font-size: 14px;
@@ -89,6 +89,25 @@
     }
     .lover-text-container ul li {
         margin-top: 16px;
+    }
+    /* latest deals media */
+    .latest-card-container {
+        margin: 40px 0;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .left-card-container, .right-card {
+        width: 100%;
+    }
+    .left-card, .right-card {
+        margin-top: 20px;
+    }  
+    .right-latest-card-text h3 {
+        font-size: 20px;
+    } 
+    .right-latest-card-text a, .latest-card-text a {
+        margin-top: 20px;
+        font-size: 16px;
     }
     
 
