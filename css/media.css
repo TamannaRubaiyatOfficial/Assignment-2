@@ -1,0 +1,32 @@
+/* Mobile Screen = 393px */
+@media (width <= 48rem) 
+{
+
+    /* header styles */
+    .header-container {
+        width: calc(100% - 8.14%);
+        margin-top: 15px;
+    }
+    .header-menu-container ul {
+        display: none;
+    }
+    .header-logo-container {
+        width: 20%;
+    }
+    .header-menu-container {
+        width: 80%;
+    }
+    .cart-container {
+        width: 100%;
+    }
+    .cart {
+        align-items: center;
+        justify-content: end;
+    }
+
+}
+/* Desktop Screen = 1440px */
+@media (width > 48rem) {
+
+}
+
