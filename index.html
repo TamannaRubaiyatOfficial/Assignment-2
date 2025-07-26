@@ -84,7 +84,7 @@
                     </div>
                     <h3 class="plants-card-title">Lily Blossom</h3>
                     <h4 class="plants-card-price">20 USD</h4>
-                    <button class="plants-card-btn btn-primary w-full"><a href="#">add to cart</a></button>
+                    <button onclick="showAlert()" class="plants-card-btn btn-primary w-full"><a href="#">add to cart</a></button>
                 </div>
 
                 <!-- plants card 2 -->
@@ -94,7 +94,7 @@
                     </div>
                     <h3 class="plants-card-title">Lily Blossom</h3>
                     <h4 class="plants-card-price">20 USD</h4>
-                    <button class="plants-card-btn btn-primary w-full"><a href="#">add to cart</a></button>
+                    <button onclick="showAlert()" class="plants-card-btn btn-primary w-full"><a href="#">add to cart</a></button>
                 </div>
 
                 <!-- plants card 3 -->
@@ -104,7 +104,7 @@
                     </div>
                     <h3 class="plants-card-title">Lily Blossom</h3>
                     <h4 class="plants-card-price">20 USD</h4>
-                    <button class="plants-card-btn btn-primary w-full"><a href="#">add to cart</a></button>
+                    <button onclick="showAlert()" class="plants-card-btn btn-primary w-full"><a href="#">add to cart</a></button>
                 </div>
 
                 <!-- plants card 4 -->
@@ -114,7 +114,7 @@
                     </div>
                     <h3 class="plants-card-title">Lily Blossom</h3>
                     <h4 class="plants-card-price">20 USD</h4>
-                    <button class="plants-card-btn btn-primary w-full"><a href="#">add to cart</a></button>
+                    <button onclick="showAlert()" class="plants-card-btn btn-primary w-full"><a href="#">add to cart</a></button>
                 </div>
 
                 <!-- plants card 5 -->
@@ -124,7 +124,7 @@
                     </div>
                     <h3 class="plants-card-title">Lily Blossom</h3>
                     <h4 class="plants-card-price">20 USD</h4>
-                    <button class="plants-card-btn btn-primary w-full"><a href="#">add to cart</a></button>
+                    <button onclick="showAlert()" class="plants-card-btn btn-primary w-full"><a href="#">add to cart</a></button>
                 </div>
 
                 <!-- plants card 6 -->
@@ -134,7 +134,7 @@
                     </div>
                     <h3 class="plants-card-title">Lily Blossom</h3>
                     <h4 class="plants-card-price">20 USD</h4>
-                    <button class="plants-card-btn btn-primary w-full"><a href="#">add to cart</a></button>
+                    <button onclick="showAlert()" class="plants-card-btn btn-primary w-full"><a href="#">add to cart</a></button>
                 </div>
 
                 <!-- plants card 7 -->
@@ -144,7 +144,7 @@
                     </div>
                     <h3 class="plants-card-title">Lily Blossom</h3>
                     <h4 class="plants-card-price">20 USD</h4>
-                    <button class="plants-card-btn btn-primary w-full"><a href="#">add to cart</a></button>
+                    <button onclick="showAlert()" class="plants-card-btn btn-primary w-full"><a href="#">add to cart</a></button>
                 </div>
 
                 <!-- plants card 8 -->
@@ -154,7 +154,7 @@
                     </div>
                     <h3 class="plants-card-title">Lily Blossom</h3>
                     <h4 class="plants-card-price">20 USD</h4>
-                    <button class="plants-card-btn btn-primary w-full"><a href="#">add to cart</a></button>
+                    <button onclick="showAlert()" class="plants-card-btn btn-primary w-full"><a href="#">add to cart</a></button>
                 </div>
             </div>
         </section>
@@ -245,6 +245,12 @@
                 </form>
             </div>
         </section>
+
+        <!-- alert box -->
+        <div id="alertBox" class="alert hidden flex justify-between items-center">
+            <span class="alert-text">Flower Added to Cart</span>
+            <span onclick="hideAlert()" class="close-btn">&times;</span>
+        </div>
     </main>
 
     <!-- footer section -->
@@ -286,6 +292,23 @@
             </div>
         </div>
     </footer>
+
+    <!-- alert box script -->
+    <script>
+        function showAlert() {
+        document.getElementById("alertBox").classList.remove("hidden");
+
+        // auto-hide after 5 seconds
+        setTimeout(() => {
+        hideAlert();
+        }, 5000);
+        }
+
+        function hideAlert() {
+        document.getElementById("alertBox").classList.add("hidden");
+        }
+    </script>
+      
     
 </body>
 </html>
